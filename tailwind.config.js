@@ -12,12 +12,25 @@ module.exports = {
       },
       backgroundImage: {
         patternBg:
-          " linear-gradient(90deg, rgb(255 255 255 / 0) 0 ,rgb(33 36 53 / 80%)), url(/src/assets/images/strock.png)  ",
+          "  linear-gradient(1deg, #212435de 20%, transparent),url(/src/assets/images/strock.png) ",
       },
       backgroundSize: {
         "100%": "100%",
       },
     },
+    screens: {
+      'phone': "320px",
+      'phone2x': "425px",
+      'sm':'640px',
+      'md':'768px',
+      'lg':'1024px',
+      'xl':'1280px',
+      '2xl':'1536px',
+
+
+
+
+    }
   },
   plugins: [],
   darkMode: "class",

@@ -1,9 +1,9 @@
 
 <template>
-  <div class="bg-primary_bg_color h-[500px]">
+  <div class="bg-primary_bg_color pb-12">
     
     <main>
-      <div id="Home" class="bg-patternBg bg-100% bg-no-repeat bg-top ">
+      <div id="Home" class="relative before:content-[''] before:bg-patternBg  before:absolute before:w-full before:h-full before:left-0 before:top-0 before:bg-contain before:opacity-5 z-0 ">
         <theheader/>
         <home  />
       </div>

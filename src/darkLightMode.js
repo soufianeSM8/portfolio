@@ -12,23 +12,31 @@ if (
 function setDarkTheme(darkIcon, lightIcon) {
   document.documentElement.classList.toggle("dark");
   localStorage.theme = "dark";
-  lightIcon.style = `transform:translateY(0px)`
-  darkIcon.style = `transform:translateY(0px)`;
+  for (let i = 0; i < 2; i++) {
+  
+     lightIcon[i].style = `transform:translateY(0px)`
+  darkIcon[i].style = `transform:translateY(0px)`;
+  }
+ 
   console.log("set dark");
 }
 
 function setLightTheme(darkIcon, lightIcon) {
   document.documentElement.classList.toggle("dark");
   localStorage.theme = "light";
-    lightIcon.style = `transform:translateY(35px)`;
-    darkIcon.style = `transform:translateY(-39px)`;
+  for (let i = 0; i < 2; i++) {
+   
+     lightIcon[i].style = `transform:translateY(35px)`;
+    darkIcon[i].style = `transform:translateY(-39px)`;
+  }
+   
   console.log("set light");
 }
 
 function onThemeSwitcherItemClick(event) {
   const theme = event.currentTarget.dataset.theme,
-        darkIcon = document.querySelector(".darkIcon"),
-        lightIcon = document.querySelector(".lightIcon");
+        darkIcon = document.querySelectorAll(".darkIcon"),
+        lightIcon = document.querySelectorAll(".lightIcon");
    if (theme === "dark") {
     setDarkTheme(darkIcon,lightIcon);
   } else {
