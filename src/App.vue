@@ -1,15 +1,14 @@
 
 <template>
-  <div>
-    <main>
-      <div id="Home" class=" bg-primary_bg_color dark:before:bg-lightPattern dark:bg-white dark:before:opacity-10 pb-12 relative before:content-[''] before:bg-patternBg  before:absolute before:w-full before:h-full before:left-0 before:top-0 before:bg-contain before:opacity-5 ">
-        <theheader/>
-
+  <div >
+    <theheader class="sticky top-0"/>
+    <main class="relative -top-20">
+      <div id="Home" class=" bg-primary_bg_color h-[90vh] max-h-[450px] flex dark:before:bg-lightPattern dark:bg-white dark:before:opacity-10 pb-12 relative before:content-[''] before:bg-patternBg  before:absolute before:w-full before:h-full before:left-0 before:top-0 before:bg-contain before:opacity-5 lg:max-h-[680px] ">
         <home id="home"  />
       </div>
-      <about id="about" class="bg-secondary_bg_color dark:before:bg-lightPattern dark:bg-white dark:before:opacity-10 relative pb-10 before:content-[''] before:bg-patternBg_2  before:absolute before:w-full before:h-full before:left-0 before:top-0 before:bg-50%  before:opacity-5  " />
-
-      <skells id="skells" class=" h-[500px] pb-12 relative before:content-[''] before:bg-lightPattern before:absolute before:w-full before:h-full before:left-0 before:top-0 before:bg-contain before:opacity-20 " />
+      <about id="about"  />
+      <skells id="skells" />
+      <work/>
     </main>
   </div>
 </template>
@@ -19,12 +18,14 @@ import theheader from "./components/Theheader.vue";
 import home from "./views/Home.vue";
 import about from "./views/About.vue";
 import skells from "./views/skills.vue";
+import work from "./views/work.vue";
 export default {
   components:{
     theheader,
     home,
     about,
-    skells
+    skells,
+    work
   }
 }
 </script>

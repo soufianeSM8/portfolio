@@ -19,7 +19,9 @@ module.exports = {
         patternBg_2:
           "linear-gradient(-0deg, #181a26 27%, transparent),url(/src/assets/images/strock_light.png)",
         lightPattern:
-          "linear-gradient(-0deg, #ffffffa3 27%, transparent),url(/src/assets/images/strock_dark.png)",
+          "linear-gradient(-0deg, #fffffff2 27%, transparent),url(/src/assets/images/strock_dark.png)",
+        pureBgPattern:
+          "linear-gradient(-0deg, transparent 0%, transparent),url(/src/assets/images/strock_dark.png)",
       },
       backgroundSize: {
         "100%": "100%",
@@ -30,6 +32,12 @@ module.exports = {
         1: "1",
         2: "2",
       },
+      backdropBlur: {
+        "Blur-on": "var(--Blur-on)",
+      },
+      boxShadow: {
+        backShadow: "0 0 13px 0 #8c8c8c",
+      },
     },
     screens: {
       phone: "320px",
@@ -38,7 +46,7 @@ module.exports = {
       md: "768px",
       lg: "1024px",
       xl: "1280px",
-      "2xl": "1536px",
+      xl2: "1536px",
     },
   },
 

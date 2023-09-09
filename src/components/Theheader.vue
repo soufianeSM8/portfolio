@@ -1,5 +1,5 @@
 <template>
-<header class=" h-15 relative z-1">
+<header class=" h-15 relative z-100  before:absolute before:w-full before:h-full before:top-0 before:left-0 before:backdrop-blur-Blur-on before:-z-1 ">
     <div class="container w-[90%] min-x-auto  flex justify-between items-center py-2 mx-auto   ">
         <logo/>
         <header-Nav class="hidden lg:block"/>
@@ -38,7 +38,17 @@ export default {
         logo,
         headerNav,
         modeSwitcher
+    },
+    mounted(){
+        let Header = document.querySelector('header').style;
+        window.addEventListener('scroll',()=>{
+            window.scrollY <= 0 ? Header.setProperty('--Blur-on','0') : Header.setProperty('--Blur-on','4px')  
+      
+        })
+        
+        
     }
+    
 }
 </script>
 
