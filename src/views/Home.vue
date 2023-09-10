@@ -10,11 +10,11 @@
         Web Applications with great user experiences. that leads to the success
         of the overall product.
       </p> 
-       <custom-button class="px-6 py-2 w-32 mx-auto   sm:py-4 lg:px-4 lg:py-3  lg:mx-0">
+       <Custom-Button class="px-6 py-2 w-32 mx-auto   sm:py-4 lg:px-4 lg:py-3  lg:mx-0">
           <span>let's talk</span> 
           
-        </custom-button>
-        <social-media class="absolute -left-28 bottom-10 hidden lg:block"/>
+        </Custom-Button>
+        <social-media class="absolute -left-28 bottom-10 hidden lg:block" Custom_Props="flex-col"/>
         <pages-number class="absolute right-5 bottom-0 hidden lg:block"/>
        
       </div>
@@ -29,6 +29,6 @@ export default {
         socialMedia,
         CustomButton,
         pagesNumber
-    }
+    },
 }
 </script>

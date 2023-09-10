@@ -1,6 +1,7 @@
 <template>
-<header class=" h-15 relative z-100  before:absolute before:w-full before:h-full before:top-0 before:left-0 before:backdrop-blur-Blur-on before:-z-1 ">
-    <div class="container w-[90%] min-x-auto  flex justify-between items-center py-2 mx-auto   ">
+<header class="fixed top-0 z-100 w-full">
+    <div class=" h-15 relative z-100  before:absolute before:w-full before:h-full before:top-0 before:left-0 before:backdrop-blur-Blur-on before:-z-1 ">
+         <div class="container w-[90%] min-x-auto  flex justify-between items-center py-2 mx-auto   ">
         <logo/>
         <header-Nav class="hidden lg:block"/>
         <mode-Switcher class="hidden lg:flex"/>
@@ -25,7 +26,9 @@
         <mode-Switcher class="mx-auto"/>
         </div>
 
+    </div> 
     </div>
+  
 </header>
 </template>
 

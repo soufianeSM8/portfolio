@@ -1,5 +1,5 @@
 <template>
-    <div class=" h-[500px] pb-12 relative z-1 bg-primary_bg_color before:content-[''] before:bg-patternBg_2 before:absolute before:w-full before:h-full before:left-0 before:top-0 before:bg-contain before:opacity-10 before:-z-1" >
+    <div class=" h-[500px] pb-12 relative z-1 bg-primary_bg_color before:content-[''] before:bg-patternBg_2 before:absolute before:w-full before:h-full before:left-0 before:top-0 before:bg-contain before:opacity-10 before:-z-1 dark:bg-white dark:before:bg-lightPattern" >
          <div class="container w-[90%] mx-auto  py-8 ">
         <sectiontitle class="dark:text-dark">/ skells</sectiontitle>
 
