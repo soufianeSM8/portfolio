@@ -1,5 +1,6 @@
 <template>
-<header class="fixed top-0 z-100 w-full">
+    <transition enter-from-class="-translate-y-10 opacity-0" enter-active-class=" duration-500 ease" enter-to-class="translate-y-0 opacity-1" appear >
+    <header class="fixed top-0 z-100 w-full">
     <div class=" h-15 relative z-100  before:absolute before:w-full before:h-full before:top-0 before:left-0 before:backdrop-blur-Blur-on before:-z-1 ">
          <div class="container w-[90%] min-x-auto  flex justify-between items-center py-2 mx-auto   ">
         <logo/>
@@ -30,6 +31,8 @@
     </div>
   
 </header>
+    </transition>
+
 </template>
 
 <script>
@@ -42,12 +45,17 @@ export default {
         headerNav,
         modeSwitcher
     },
+    methods:{
+        headerBlurEffect(){
+            let Header = document.querySelector('header').style;
+                    window.addEventListener('scroll',()=>{
+                        window.scrollY <= 0 ? Header.setProperty('--Blur-on','0') : Header.setProperty('--Blur-on','4px')  
+                
+                    })
+        }
+    },
     mounted(){
-        let Header = document.querySelector('header').style;
-        window.addEventListener('scroll',()=>{
-            window.scrollY <= 0 ? Header.setProperty('--Blur-on','0') : Header.setProperty('--Blur-on','4px')  
-      
-        })
+       this.headerBlurEffect()
         
         
     }

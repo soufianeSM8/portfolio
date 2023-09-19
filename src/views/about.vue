@@ -6,7 +6,9 @@
             <div class="flex justify-center flex-wrap  gap-y-20 lg:justify-between">
 
                 <div class="aboutInfo w-full lg:w-1/2 flex items-center order-1 lg:order-none">
-                    <p class="text-white dark:text-primary_bg_color  relative text-center leading-8  before:absolute before:content-[''] before:w-52 before:h-[1px] before:bg-white dark:before:bg-primary_bg_color before:-top-6 before:left-1/2 before:-translate-x-1/2 lg:text-start lg:before:left-0 lg:before:translate-x-0 w-11/12 mx-auto md:w-auto">I am a Frontend developer, who loves to provide 
+                    <div>
+                          <h2 class="relative mb-7 text-2xl font-bold text-white before:absolute before:content-[''] before:w-52 before:h-[1px] before:bg-white dark:before:bg-primary_bg_color before:-bottom-3 before:left-1/2 before:-translate-x-1/2 lg:before:left-0 lg:before:translate-x-0 dark:text-primary_bg_color">WHO I AM! <span class="text-4xl">🤔</span> </h2>
+                    <p class="text-white dark:text-primary_bg_color  text-center leading-8 lg:text-start  w-11/12 mx-auto md:w-auto">I am a Frontend developer, who loves to provide 
                         solutions for people and business projects which
                         is a challenge I like to overcome.I build websites using HTML, CSS, JavaScript,
                         and other frameworks and libraries. 
@@ -14,12 +16,17 @@
                         I keep working on getting better by trying 
                         to reach the best version of myself.</p>
                 </div>
-                 <div class="aboutImage w-full lg:w-1/2 flex justify-center   lg:justify-end">
-                    <div id="profileImgBox" class="profileBg relative rounded-full bg-blueGradient overflow-hidden bg-cover w-72 md:w-80 lg:w-[400px]">
-                        <img src="../assets/images/profile.png" alt="profile" class="relative top-5 mx-auto  duration-500 profileImg">
                     </div>
-                    
-                </div> 
+                    <div class="aboutImage w-full lg:w-1/2 flex justify-center   lg:justify-end">
+                            <transition enter-from-class="-rotate-12 translate-x-10  opacity-0 origin-center" enter-active-class=" duration-500 ease-in " enter-to-class="rotate-0 translate-x-0  opacity-1 origin-center" appear class="hover:-rotate-45 duration-500">
+                            
+                            <div id="profileImgBox" class="profileBg relative rounded-full bg-blueGradient overflow-hidden bg-cover w-72 md:w-80 lg:w-[400px]">
+                                <img src="../assets/images/profile.png" alt="profile" class="relative top-5 mx-auto  duration-500 profileImg">
+                            </div>
+                            
+                        </transition>
+                        </div> 
+                 
             </div>
         </div>
     </div>

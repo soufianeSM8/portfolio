@@ -1,7 +1,9 @@
 <template>
-  <div class="container mr-auto ml-auto mt-40 lg:mt-56 relative z-0  ">
-    <div class="text-center flex flex-col gap-y-4  lg:gap-y-6 relative lg:ml-36 lg:text-left">
-      <h1
+  <div class="container mr-auto ml-auto mt-32 lg:mt-56 relative z-0  ">
+    <div class="relative">
+     <transition enter-from-class="-translate-x-10 opacity-0" enter-active-class=" duration-500 ease" enter-to-class="translate-x-0 opacity-1" appear>
+     <div class="text-center flex flex-col gap-y-4  lg:gap-y-6  lg:ml-36 lg:text-left">
+       <h1
         class="relative text-white dark:text-primary_bg_color uppercase font-bold text-2xl phone2x:text-3xl md:text-5xl  ">
         i'm <span class="text-CustomBlue">soufiane</span> <span>samni</span> 
     </h1>
@@ -14,8 +16,15 @@
           <span>let's talk</span> 
           
         </Custom-Button>
-        <social-media class="absolute -left-28 bottom-10 hidden lg:block" Custom_Props="flex-col"/>
-        <pages-number class="absolute right-5 bottom-0 hidden lg:block"/>
+     </div>
+     </transition>
+     <transition enter-from-class="translate-y-10 opacity-0" enter-active-class=" duration-500 ease-in" enter-to-class="translate-y-0 opacity-1" appear>
+     <social-media class="absolute left-4 -bottom-16 hidden lg:block" Custom_Props="flex-col"/>
+     </transition>
+
+        <transition enter-from-class="translate-y-10 opacity-0" enter-active-class=" duration-500 ease-in" enter-to-class="translate-y-0 opacity-1" appear>
+          <pages-number class="absolute right-5 -bottom-16 hidden lg:block"/>
+        </transition>
        
       </div>
   </div>

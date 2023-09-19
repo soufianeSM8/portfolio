@@ -2,9 +2,11 @@
 <template>
   <div >
     <main class="relative ">
-      <theheader class=""/>
+      <!-- <transition> -->
+        <theheader class=""/>
+      <!-- </transition> -->
       
-      <div id="Home" class=" bg-primary_bg_color h-[90vh] max-h-[450px] flex dark:before:bg-lightPattern dark:bg-white dark:before:opacity-10 pb-12 relative before:content-[''] before:bg-patternBg  before:absolute before:w-full before:h-full before:left-0 before:top-0 before:bg-contain before:opacity-5 lg:max-h-[680px] ">
+      <div id="Home" class=" bg-primary_bg_color  max-h-[450px] flex dark:before:bg-lightPattern dark:bg-white dark:before:opacity-10 pb-12 relative before:content-[''] before:bg-patternBg  before:absolute before:w-full before:h-full before:left-0 before:top-0 before:bg-contain before:opacity-5 lg:min-h-[680px] lg:h-[90vh] ">
         <home id="home"  />
       </div>
       <about id="about"  />
